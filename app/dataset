@@ -1,0 +1,105 @@
+INSERT INTO events (id, event_name, description, max_people, location, agency, created)
+VALUES (1, "Mitzvah Day 2010", "Master Event for Mitzvah Day 2010", 10, "Temple Beth Israel", "Mitzvah-Day.org", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (1, 0, "Margot", "Helphand");
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (2, 0, "Justine", "Lovinger");
+
+INSERT INTO groups (id, group_name, created) VALUES(1, "Mitzvah Day Organizers", now());
+INSERT INTO people_events VALUES (1, 1, 1, "");
+INSERT INTO people_events VALUES (2, 2, 1, "");
+INSERT INTO people_groups VALUES (1, 1, 1);
+INSERT INTO people_groups VALUES (2, 2, 1);
+INSERT INTO group_events VALUES (1, 1, 1);
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Blankets for Children", "Making blankets for children in need (20 blankets)", 30, "TBI", "Comforts for Children", "middle school and up", "10:00 - 12:00", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (3, 0, "Barbara", "Friedson");
+INSERT INTO people_events VALUES (3, 3, 2, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Gardening at Mt. Pisgah", "Gardening at the Native Plant Nursery transplanting, weeding, Etc.", 12, "Buford Park/Mt. Pisgah", "Friends of Buford Park", "middle school and up", "10:30 - 1:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (4, 0, "Amy", "Steckel");
+INSERT INTO people_events VALUES (4, 4, 3, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Park Enhancement at Mt. Pisgah", "Removal of invasive plants", 12, "Buford Park/Mt. Pisgah", "Friends of Buford Park", "middle school and up", "10:30 - 1:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (5, 0, "Esther", "Jacobson");
+INSERT INTO people_events VALUES (5, 5, 4, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Seniors Sing-a-long", "Singing at Nursing Home", 5, "South Hills", "South Hills", "all ages", "10:00 – 11:00", now()); 
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (6, 0, "Rich", "Glauber");
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (7, 0, "Tom", "Broeker");
+INSERT INTO people_events VALUES (6, 6, 5, "");
+INSERT INTO people_events VALUES (7, 7, 5, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Spring Cleaning Deep cleaning (Kitchen)", "First Place Family Center", 8, "First Place Family Center", "First Place Family Center", "middle school and up", "10:00 - 1:00", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (8, 0, "Barry", "Nobel");
+INSERT INTO people_events VALUES (8, 8, 6, "");
+ 
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Toiletry Kits for women and children", "Assemble items needed by women and children who are receiving help from WomenSpace and deliver", 7, "TBI", "Womenspace", "all ages", "10:00 - 11:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (9, 0, "Judy", "Goldstein");
+INSERT INTO people_events VALUES (9, 9, 7, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Kitchen kits for  women", "Assemble kitchen kits for women leaving the WomenSpace safe house", 5, "TBI", WomenSpace", "All ages", "10:00 - 11:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (10, 0, "Carole", "Stein");
+INSERT INTO people_events VALUES (10, 10, 8, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Jewish Social Services", "Each person or team will visit 1- 2 homes", 5, "At Homes", "Jewish Family Services", "Middle School and Up", "10:00 - 1:00", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (11, 0, "Deb", "Weinman");
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (12, 0, "Bernie", "Maegan");
+INSERT INTO people_events VALUES (11, 11, 9, "");
+INSERT INTO people_events VALUES (12, 12, 9, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Spruce up children’s Home", "Sprucing up toddler’s playroom and toys and outside gardening", 5, "Mutual Home", "Catholic Community Services", "Middle School and Up", "10:30 – 1:00", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (13, 0, "Al", "Bennett");
+INSERT INTO people_events VALUES (13, 13, 10, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Spruce up food box center",  "Inside and outside maintenance in food box room", 7, "Location TDB",  Catholic Community Services",  "Middle School and up", "10:30 - 1:00", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (14, 0, "Ellen", "Todras");
+INSERT INTO people_events VALUES (14, 14, 11, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Bus Washing and play area clean up", "Wash the busses and clean outdoor play area", 7, "Relief Nursery",  "Relief Nursery", "All ages", "10:30 – 12:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (15, 0, "Liz", "Phelps");
+INSERT INTO people_events VALUES (15, 15, 12, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Gounds Spruce up", "Spruce up grounds at Greenhill", 7, "GreenHill", "GreenHill Humane Society", "All ages", "10:30 - 1:00", now());
+
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Nursing Home beautification", "Plant planter boxes at nursing home 26 boxes", 5, "Good Samaritan Home", "Good Sam", "Middle School and up", "10:00 – 12:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (16, 0, "Bruce", "Kreitzberg");
+INSERT INTO people_events VALUES (16, 16, 13, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Blankets For Children", "Make blankets", 0, "Talmud Torah", "Blankets for Children", "All Ages", "Talmud Torah", now()); 
+
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Letters for Womenspace",  "Write letters to include in WomenSpace kits", 0, "Shalhevet, TBI", "WomenSpace", "High School", "Shalhevet", now());
+
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Starter boxes", "Starter Boxes for First Place families (One per TT Class)", 0, "Talmud Torah, TBI", "First Place", "Talmud Torah", "Talmud Torah", now());
+INSERT INTO people (id, parent_id, first_name) VALUES (17, 0, "Yedida");
+INSERT INTO people_events VALUES (17, 17, 14, "");
+INSERT INTO people_events VALUES (18, 17, 15, "");
+INSERT INTO people_events VALUES (19, 17, 16, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Breakfast Team", "Setup and Cleanup Breakfast for Mitzvah Day Volunteers", 10, "Temple Beth Israel", "Got-Mitzvah?", "Middle School and Up", "7:30 - 10:30", now());
+INSERT INTO people (id, parent_id, first_name, last_name) VALUES (18, 0, "Bob", "Rubenstein");
+INSERT INTO people_events VALUES (20, 18, 17, "");
+
+INSERT INTO events (parent_id, event_name, description, max_people, location, agency, restrictions, time, created)
+VALUES (1, "Mitzvah Day Registration", "Help during Mitzvah Day Registration", 3, "Temple Beth Israel", "Got-Mitzvah?", "Middle School and Up", "7:30 - 10:30", now()); 
+INSERT INTO people (id, parent_id, first_name) VALUES (19, 0, "Oriana");
+INSERT INTO people_events VALUES (21, 19, 18, "");
+
