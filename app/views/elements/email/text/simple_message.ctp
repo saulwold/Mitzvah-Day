@@ -19,4 +19,4 @@ After breakfast you'll meet with your project leader and get started!
 
 Thanks again
 
-	Mitzvah Day 2011 Team
+	Mitzvah Day 2012 Team

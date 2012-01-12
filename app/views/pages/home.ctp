@@ -14,8 +14,8 @@
 </div>
 
 <div class="content_main">
-    <h1>3<sup>nd</sup> Annual Mitzvah Day 2011</h1>
-    <h2>Sunday, May 15th, 2011</h2>
+    <h1>4<sup>th</sup> Annual Mitzvah Day 2012</h1>
+    <h2>Sunday, May 15th, 2012</h2>
     <br>
 <!--font size="3" face="Gill Sans MT"-->
 <p>Join the entire Jewish community 

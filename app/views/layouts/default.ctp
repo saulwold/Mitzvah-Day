@@ -27,7 +27,7 @@
 <head>
     <?php echo $html->charset(); ?>
     <title>
-        Mitzvah Day 2011
+        Mitzvah Day 2012
         <?php echo $title_for_layout; ?>
     </title>
     <?php
@@ -47,7 +47,7 @@
                 <?php echo $html->image('got_mitzvah_blue.png', array('class'=>'got_mitzvah', 'alt'=>"Got Mitzvah?")); ?>
             </a>
             <a href="/">
-                <?php echo $html->image('mitzvah-day-2011.png', array('class'=>'logo', 'alt'=>"Mitzvah Day 2011")); ?>
+                <?php echo $html->image('mitzvah-day-2012.png', array('class'=>'logo', 'alt'=>"Mitzvah Day 2012")); ?>
             </a>
         </div>
         <div class="content">
@@ -55,7 +55,7 @@
             <?php echo $content_for_layout; ?>
         </div>
         <div class="footer">
-                <p class="copyright">© 2011 Mitzvah-Day.org. All Rights Reserved.</p>
+                <p class="copyright">© 2012 Mitzvah-Day.org. All Rights Reserved.</p>
         </div>
       </div>
     <?php echo $cakeDebug; ?>
