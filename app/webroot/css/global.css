@@ -246,6 +246,13 @@ h1 {
 	font-weight: bold;
 }
 
+h1.big_font {
+	font-size: 20px;
+	line-height: 20px;
+	color: #0054a6;
+	font-weight: bold;
+}
+
 h2.error {
 	font-size: 12px;
 	line-height: 20px;

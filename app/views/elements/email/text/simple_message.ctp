@@ -9,7 +9,7 @@ This event is sponsored by <?php echo $person['Event'][0]['agency']; ?>
 
 
 Mitzvah Day Kick-Off Breakfast
-May 15th 8:45 a.m. at Temple Beth Israel
+May 20th, 2012 8:45 a.m. at Temple Beth Israel
 
 Come enjoy our bountiful bagel breakfast (sponsored by Toby's, Genesis, and Bagel Sphere) at
 8:45 in the Temple Beth Israel Social Hall (1175 E. 29th Ave., Eugene).

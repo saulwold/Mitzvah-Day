@@ -1,6 +1,6 @@
 
 <h1><?php echo $project['event_name']; ?></h1>
-<h2>Sunday, May 15th, 2011</h2>
+<h2>Sunday, May 20th, 2012</h2>
 <h2><?php echo $project['time']; ?></h2>
 <h2><?php echo $project['location']; ?></h2>
 <br>

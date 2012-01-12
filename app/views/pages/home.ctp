@@ -14,8 +14,9 @@
 </div>
 
 <div class="content_main">
+    <h1 class="big_font"> Comming Soon</h1>
     <h1>4<sup>th</sup> Annual Mitzvah Day 2012</h1>
-    <h2>Sunday, May 15th, 2012</h2>
+    <h2>Sunday, May 20th, 2012</h2>
     <br>
 <!--font size="3" face="Gill Sans MT"-->
 <p>Join the entire Jewish community 
@@ -35,7 +36,7 @@ in-class projects.&nbsp;<br>&nbsp;<br></p>
     <div class="divider">&nbsp;</div>
 
     <h1>Mitzvah Day Kick-Off Breakfast</h1>
-    <h2>May 15th 8:45 a.m. at Temple Beth Israel</h2>
+    <h2>May 20th, 2012 8:45 a.m. at Temple Beth Israel</h2>
     <br>
     <p>Come enjoy our bountiful 
     bagel breakfast (sponsored by Toby’s, Genesis, and Bagel Sphere) at 
