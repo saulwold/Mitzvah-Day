@@ -1,3 +1,4 @@
+<!--?php debug($project['Event']); ?-->
 <!--?php debug($events); ?>
 <-?php foreach($events as $event): ?>
 <-?php    echo $event['Event']['event_name']; ?>
@@ -41,18 +42,7 @@
 
     <div class="divider">&nbsp;</div>
 
-    <!--h2>Mitzvah Day Projects include (click project title for details):</h2-->
-
-    <p>Note: Registration for Mitzvah Day has been so successful (thank you!) that the original project offerings are all full.</p>
-
-    <!--div class="divider">&nbsp;</div-->
-
-    <!--h1>Registration will Open Soon!</h1-->
-    <!--h1>Register Today!</h1>
-    <h2>PLEASE HELP BY MEETING OUR MAY 8<sup>th</sup> REGISTRATION DEADLINE</h2>
-    <a class="button" href="/people/registration">
-        <?php echo $html->image('button_registerhere.png', array('class'=>'button', 'alt'=>'Register Here!', 'width'=>'135', 'height'=>'25')); ?>
-    </a-->
+    <?php echo $this->element('registration', array('project'=>$project['Event'])); ?>
 
     <div class="divider">&nbsp;</div>
 
