@@ -1,3 +1,5 @@
+<!--?php debug ($this) ?-->
+<?php foreach( $events as $event ) debug($event); ?>
 <div class="registration_main">
 <?php echo $form->create('Person', array('url' => array('action' => 'registration')));?>
 <fieldset>
@@ -51,10 +53,18 @@
                 echo $form->validationErrors['Event']['Event']; ?>">
 	<font size="10">Project Selection</font></b>
         <select class="select_menu" name="data[0][Event][Event]" attributes="" id="EventEvent">
-	  <option class="title" disabled selected="">Please Select Project</option>
+          <?php if (is_numeric($this->params['pass'][0])): ?>
+	      <option class="title" disabled >Please Select Project</option>
+          <?php else: ?>
+	      <option class="title" disabled selected="">Please Select Project</option>
+          <?php endif ?>
           <option class="title" disabled>---- Available Projects ----</option>
           <?php foreach( $events as $event ): ?>
-            <?php echo $this->element('event_options', array('event'=>$event['events'], 'options'=> 'class=open_event' )); ?>
+            <?php if ($this->params['pass'][0] == $event['events']['id']): ?>
+              <?php echo $this->element('event_options', array('event'=>$event['events'], 'options'=> 'class=open_event selected=""' )); ?>
+          <?php else: ?>
+              <?php echo $this->element('event_options', array('event'=>$event['events'], 'options'=> 'class=open_event' )); ?>
+          <?php endif ?>
           <?php endforeach; ?>
           <option class="title" disabled>---- Full Projects ----</option>
           <?php foreach( $fullEvents as $event ): ?>
