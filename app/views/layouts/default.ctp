@@ -35,7 +35,7 @@
 
         echo $html->css('reset', null, array('media'=>'screen'));
         echo $html->css('global', null, array('media'=>'screen'));
-        echo $html->meta('js/jquery');
+        echo $javascript->link('js/jquery');
         echo $scripts_for_layout;
     ?>
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
@@ -51,14 +51,14 @@
             </a>
         </div>
         <div class="content">
-            <?php $session->flash(); ?>
+            <?php echo $session->flash(); ?>
             <?php echo $content_for_layout; ?>
         </div>
         <div class="footer">
                 <p class="copyright">© 2012 Mitzvah-Day.org. All Rights Reserved.</p>
         </div>
       </div>
-    <?php echo $cakeDebug; ?>
+    <?php //echo $cakeDebug; ?>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

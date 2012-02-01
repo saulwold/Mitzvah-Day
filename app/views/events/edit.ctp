@@ -1,11 +1,58 @@
 <div class="events form">
 <?php echo $form->create('Event');?>
-	<fieldset>
- 		<legend><?php __('Edit Event');?></legend>
-	<?php
-		echo $form->input('id');
-		echo $form->input('event_name');
-		echo $form->input('description');
+	<fieldset> 	
+  
+ 	<div class="simpleField">Event Id: <?= $this->data['Event']['id']?></div>
+
+<?php
+ 	echo $this->element('form/field', array(
+ 		'fieldName'=>"Event Name",
+ 		'value'=>$this->data['Event']['event_name'],
+ 		'cakeName'=>"data[Event][event_name]"
+	));
+
+	echo $this->element('form/field', array(
+ 		'fieldName'=>"Description",
+ 		'value'=>$this->data['Event']['description'],
+ 		'cakeName'=>"data[Event][description]",
+ 		'type'=>'textbox'
+	));
+
+	echo $this->element('form/field', array(
+ 		'fieldName'=>"Restrictions",
+ 		'value'=>$this->data['Event']['restrictions'],
+ 		'cakeName'=>"data[Event][restrictions]",
+ 		'type'=>'textbox'
+	));
+
+ 	echo $this->element('form/field', array(
+ 		'fieldName'=>"Event Location",
+ 		'value'=>$this->data['Event']['location'],
+ 		'cakeName'=>"data[Event][location]"
+	));
+
+	echo $this->element('form/field', array(
+ 		'fieldName'=>"Sponsoring Agency",
+ 		'value'=>$this->data['Event']['agency'],
+ 		'cakeName'=>"data[Event][agency]"
+	));
+
+	echo $this->element('form/field', array(
+ 		'fieldName'=>"Time",
+ 		'value'=>$this->data['Event']['time'],
+ 		'cakeName'=>"data[Event][time]"
+	));
+
+	echo $this->element('form/field', array(
+ 		'fieldName'=>"Time",
+ 		'value'=>$this->data['Event']['time'],
+ 		'cakeName'=>"data[Event][time]",
+ 		'type'=>'value_toggle'
+	));
+
+?>
+<hr/>
+	<?php						
 		echo $form->input('max_people');
 		echo $form->input('location');
 		echo $form->input('agency');
@@ -14,16 +61,9 @@
 		echo $form->input('Group');
 		echo $form->input('Person');
 	?>
-	</fieldset>
+	</fieldset>	
 <?php echo $form->end('Submit');?>
 </div>
-<div class="actions">
-	<ul>
-		<li><?php echo $html->link(__('Delete', true), array('action' => 'delete', $form->value('Event.id')), null, sprintf(__('Are you sure you want to delete # %s?', true), $form->value('Event.id'))); ?></li>
-		<li><?php echo $html->link(__('List Events', true), array('action' => 'index'));?></li>
-		<li><?php echo $html->link(__('List Groups', true), array('controller' => 'groups', 'action' => 'index')); ?> </li>
-		<li><?php echo $html->link(__('New Group', true), array('controller' => 'groups', 'action' => 'add')); ?> </li>
-		<li><?php echo $html->link(__('List People', true), array('controller' => 'people', 'action' => 'index')); ?> </li>
-		<li><?php echo $html->link(__('New Person', true), array('controller' => 'people', 'action' => 'add')); ?> </li>
-	</ul>
+<div>
+	<?php debug($this->data) ?>
 </div>

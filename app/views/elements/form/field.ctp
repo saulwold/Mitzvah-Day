@@ -10,7 +10,9 @@
       </div>    
     <?php break; ?>
     <?php case 'value_toggle': ?>
-      
+      <div class="field">
+        
+      </div>
     <?php break; ?>
     <?php default : ?>  
       <div class="field">
