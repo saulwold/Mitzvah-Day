@@ -361,3 +361,45 @@ td.actions a {
         margin: 0px 6px;
 }
 
+/*Crud editing forms below*/
+div.simple_field {
+	margin: 15px 0px 15px 7px;	
+}
+div.simple_field input.text {
+	padding: 5px 5px 3px 2px;
+	width: 30em;
+	font-size: 16px;
+	color: #222;
+}
+
+div.simple_field textarea {
+	padding: 5px 5px 3px 5px;	
+	width: 30em;
+	height: 7em;
+	font-size: 16px;
+	color: #222;
+	font-family: Tahoma, sans-serif;
+}
+
+div.simple_field div.field_name {
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	padding: 0px 0px 2px 0px;
+}
+
+div.field_name span.note {
+	color: #555;
+}
+
+div.simple_field div.checkboxes {
+	height: 10em;
+	width: 30em;
+	overflow: auto;
+	border: 1px solid black;	
+}
+
+div.check {
+	padding: 0px;
+	margin: 0px 0px 2px 0px;
+	height: 1em;
+}

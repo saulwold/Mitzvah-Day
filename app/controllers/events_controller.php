@@ -1,4 +1,5 @@
 <?php
+
 class EventsController extends AppController {
 
 	var $name = 'Events';
@@ -70,7 +71,7 @@ debug($events);
 		}
 		if (!empty($this->data)) {
 			if ($this->Event->save($this->data)) {
-				$this->Session->setFlash(__('The Event has been saved', true));
+				$this->Session->setFlash(__('The Event has been saved', true));				
 				$this->redirect(array('action'=>'index'));
 			} else {
 				$this->Session->setFlash(__('The Event could not be saved. Please, try again.', true));
@@ -79,8 +80,13 @@ debug($events);
 		if (empty($this->data)) {
 			$this->data = $this->Event->read(null, $id);
 		}
-		$groups = $this->Event->Group->find('list');
-		$people = $this->Event->Person->find('list');
+
+		$people = $this->Event->Person->find('all', array(
+			'fields' => array('Person.first_name', 'Person.last_name', 'Person.id'),
+			'conditions' => array(),
+			'contain' => array()
+		));
+
 		$this->set(compact('groups','people'));
 	}
 

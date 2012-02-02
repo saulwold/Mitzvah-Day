@@ -35,7 +35,7 @@
 
         echo $html->css('reset', null, array('media'=>'screen'));
         echo $html->css('global', null, array('media'=>'screen'));
-        echo $javascript->link('js/jquery');
+        echo $javascript->link('jquery.js');
         echo $scripts_for_layout;
     ?>
     <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->

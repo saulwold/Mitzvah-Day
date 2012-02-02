@@ -1,7 +1,7 @@
 <?php if (!isset($type)) $type = "default"; ?>
 
-<div class="simpleField">
-  <div class="fieldname"><?= $fieldName ?></div>
+<div class="simple_field">
+  <div class="field_name"><?= $fieldName ?></div>
 
   <?php switch ($type) : 
       case 'textbox' : ?>          

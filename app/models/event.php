@@ -45,7 +45,7 @@ class Event extends AppModel {
 			'foreignKey' => 'event_id',
 			'associationForeignKey' => 'person_id',
 			'unique' => true,
-			'conditions' => array('Person.id > 20'),
+			'conditions' => array('PeopleEvent.id > 20'),
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
