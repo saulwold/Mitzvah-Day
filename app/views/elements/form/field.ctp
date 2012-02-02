@@ -16,7 +16,7 @@
     <?php break; ?>
     <?php default : ?>  
       <div class="field">
-        <input type="text" value="<?= $value?>" name="<?= $cakeName ?>"/>
+        <input class="text" type="text" value="<?= $value?>" name="<?= $cakeName ?>"/>
       </div>    
   <?php endswitch; ?>
 </div>      
