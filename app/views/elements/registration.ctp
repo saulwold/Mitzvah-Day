@@ -1,6 +1,6 @@
 
 <!-- These settings will need to come from the Database Admin Page! -->
-<?php $regopen = 1; $regclosed = 0; $event_full = FALSE; ?>
+<?php $regopen = 0; $regclosed = 0; $event_full = FALSE; ?>
 
 <?php foreach( $fullEvents as $event ): ?>
     <?php if(isset($project) && in_array($project['event_name'], $event['events']) &&
