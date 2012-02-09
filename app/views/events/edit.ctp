@@ -25,6 +25,24 @@
 	  }
 	}
 
+  function toggleCheckboxes() {
+    var count = $('input.mm_check:checked').length;
+    var max = $('input.max_people').val();
+
+    if (max < 0) {
+      $('input.mm_check').prop('disabled', true);
+    } else {
+      $('input.mm_check').prop('disabled', false);
+    }
+
+    if (count >= max) {
+      $('input.mm_check:not(:checked)').prop('disabled', true);
+    } else {
+      $('input.mm_check:not(:checked)').prop('disabled', false);
+      $('span.people_count').text(count);
+    }
+  }
+
   $(document).ready(function () {
     togglePeopleView("reg");
 
@@ -36,11 +54,9 @@
         togglePeopleView("reg");
     });
 
-    $('input.mm_check').change(function () {
-      var count = $('input.mm_check:checked').length;
-      $('span.people_count').text(count);
+    $('input.mm_check, input.max_people').change(function () {
+      toggleCheckboxes();
     });
-
   });
 
 </script>
@@ -91,7 +107,8 @@
     echo $this->element('form/field', array(
        'fieldName'=>'Max People <span class="note">(-1 for closed)</span>',
        'value'=>$this->data['Event']['max_people'],
-       'cakeName'=>"data[Event][max_people]"
+       'cakeName'=>"data[Event][max_people]",
+       'extraClass'=>"max_people"
     ));
   ?>
 
