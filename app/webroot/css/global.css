@@ -81,7 +81,7 @@ img.sidebar {
 }
 
 img.button {
-	margin: 10px 0;	
+	margin: 10px 0;
 }
 
 img.badge {
@@ -150,7 +150,7 @@ input.notes {
 }
 
 input.button_radio {
-	float: left;	
+	float: left;
 }
 
 input.button_submit {
@@ -175,7 +175,7 @@ input.button_submit {
 	margin: 10px 0;
 	padding: 0 0 0 0;
 	height: 4px;
-	line-height: 4px; 
+	line-height: 4px;
 	font-size: 4px;
 	background: #000000;
 }
@@ -186,7 +186,7 @@ input.button_submit {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	height: 0;
-	line-height: 1px; 
+	line-height: 1px;
 	font-size: 1px;
 }
 
@@ -196,7 +196,7 @@ input.button_submit {
 	margin: 10px 0;
 	padding: 0 0 0 0;
 	height: 1px;
-	line-height: 1px; 
+	line-height: 1px;
 	font-size: 1px;
 	background: #cccccc;
 }
@@ -315,7 +315,7 @@ p.moreinfo {
 	font-weight: normal;
 	margin-right: auto;
 	margin-left: 50px;
-	
+
 }
 a.moreinfo {
 	background: url(../img/arrow.png) right no-repeat;
@@ -327,7 +327,7 @@ a.moreinfo {
 }
 
 a.button {
-	border-bottom: none;	
+	border-bottom: none;
 }
 
 p.copyright {
@@ -363,7 +363,7 @@ td.actions a {
 
 /*Crud editing forms below*/
 div.simple_field {
-	margin: 15px 0px 15px 7px;	
+	margin: 15px 0px 15px 7px;
 }
 div.simple_field input.text {
 	padding: 5px 5px 3px 2px;
@@ -373,7 +373,7 @@ div.simple_field input.text {
 }
 
 div.simple_field textarea {
-	padding: 5px 5px 3px 5px;	
+	padding: 5px 5px 3px 5px;
 	width: 30em;
 	height: 7em;
 	font-size: 16px;
@@ -391,15 +391,28 @@ div.field_name span.note {
 	color: #555;
 }
 
-div.simple_field div.checkboxes {
+div.simple_field div.data_block {
 	height: 10em;
-	width: 30em;
+	width: 31em;
 	overflow: auto;
-	border: 1px solid black;	
+	border: 1px solid black;
 }
 
 div.check {
 	padding: 0px;
 	margin: 0px 0px 2px 0px;
 	height: 1em;
+}
+
+span.mm_buttons {
+	margin: 0em 0em 0em 15em;
+	color: #555;
+}
+
+span.mm_button:hover {
+	cursor: pointer;
+}
+
+div.mm_name {
+  margin: 5px 0px 0px 5px;
 }
