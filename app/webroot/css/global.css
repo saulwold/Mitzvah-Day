@@ -416,3 +416,12 @@ span.mm_button:hover {
 div.mm_name {
   margin: 5px 0px 0px 5px;
 }
+
+span.none {
+	color: blue;
+	cursor: pointer;	
+}
+
+span.none:hover {
+	text-decoration:underline;
+}
