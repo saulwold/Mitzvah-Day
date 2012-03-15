@@ -101,12 +101,12 @@ debug($events);
 			$this->redirect(array('action'=>'report'));
 		}
 	}
-	private function delete($id = null) {
+  function delete($id = null) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid id for Event', true));
 			$this->redirect(array('action'=>'index'));
 		}
-		if ($this->Event->del($id)) {
+		if ($this->Event->delete($id)) {
 			$this->Session->setFlash(__('Event deleted', true));
 			$this->redirect(array('action'=>'index'));
 		}
