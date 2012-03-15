@@ -14,7 +14,6 @@ echo $paginator->counter(array(
 	<th><?php echo $paginator->sort('phone_number');?></th>
 	<th><?php echo $paginator->sort('email');?></th>
 	<th><?php echo $paginator->sort('created');?></th>
-	<th><?php echo $paginator->sort('modified');?></th>
 	<th class="actions"><?php __('Actions');?></th>
 </tr>
 <?php
