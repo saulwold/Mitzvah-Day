@@ -43,7 +43,17 @@
 
     <div class="divider">&nbsp;</div>
 
-    <h4>Intel Corporation</h4>
+    <!--h4>Intel Corporation</h4-->
+    <a class="sidebar" href="http://www.intel.com">
+        <?php echo $html->image('intel.gif', array('class'=>'sidebar', 'alt'=>"Intel Corporation")); ?>
+    </a-->
+
+    <div class="divider">&nbsp;</div>
+
+    <!--h4>Lunar Logic</h4-->
+    <a class="sidebar" href="http://www.lunarlogic.com">
+        <?php echo $html->image('logo_lunarlogic.gif', array('class'=>'sidebar', 'alt'=>"Lunar Logic")); ?>
+    </a-->
 
     <!--h4>Selco Community Credit Union</h4>
     <a class="sidebar" href="http://www.selco.org">
