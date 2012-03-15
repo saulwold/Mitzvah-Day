@@ -43,8 +43,10 @@
 
     <div class="divider">&nbsp;</div>
 
-    <!--h4>Selco Community Credit Union</h4-->
+    <h4>Intel Corporation</h4>
+
+    <!--h4>Selco Community Credit Union</h4>
     <a class="sidebar" href="http://www.selco.org">
         <?php echo $html->image('SELCO_75years.jpg', array('class'=>'sidebar', 'alt'=>"Selco Community Credit Union")); ?>
-    </a>
+    </a-->
 

@@ -1,5 +1,5 @@
 <!--?php debug ($this) ?-->
-<?php foreach( $events as $event ) debug($event); ?>
+<!--?php foreach( $events as $event ) debug($event); ?-->
 <div class="registration_main">
 <?php echo $form->create('Person', array('url' => array('action' => 'registration')));?>
 <fieldset>
