@@ -12,9 +12,7 @@ echo $paginator->counter(array(
 	<th><?php echo $paginator->sort('first_name');?></th>
 	<th><?php echo $paginator->sort('last_name');?></th>
 	<th><?php echo $paginator->sort('phone_number');?></th>
-	<th><?php echo $paginator->sort('tshirt');?></th>
-	<th><?php echo $paginator->sort('password');?></th>
-	<th><?php echo $paginator->sort('last_donation');?></th>
+	<th><?php echo $paginator->sort('email');?></th>
 	<th><?php echo $paginator->sort('created');?></th>
 	<th><?php echo $paginator->sort('modified');?></th>
 	<th class="actions"><?php __('Actions');?></th>
@@ -41,20 +39,11 @@ foreach ($people as $person):
 			<?php echo $person['Person']['phone_number']; ?>
 		</td>
 		<td>
-			<?php echo $person['Person']['tshirt']; ?>
-		</td>
-		<td>
-			<?php echo $person['Person']['password']; ?>
-		</td>
-		<td>
-			<?php echo $person['Person']['last_donation']; ?>
-		</td>
+			<?php echo $person['Person']['email']; ?>
+		</td>		
 		<td>
 			<?php echo $person['Person']['created']; ?>
-		</td>
-		<td>
-			<?php echo $person['Person']['modified']; ?>
-		</td>
+		</td>	
 		<td class="actions">
 			<?php echo $html->link(__('View', true), array('action' => 'view', $person['Person']['id'])); ?>
 			<?php echo $html->link(__('Edit', true), array('action' => 'edit', $person['Person']['id'])); ?>
