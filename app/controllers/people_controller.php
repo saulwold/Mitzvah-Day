@@ -16,6 +16,12 @@ class PeopleController extends AppController {
 
 	function index() {
 		$this->Person->recursive = 0;
+
+		$this->paginate = array(
+			'limit' => 50,
+			'order' => array("Person.last_name")
+		);
+
 		$this->set('people', $this->paginate());
 	}
 
