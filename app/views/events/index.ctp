@@ -9,6 +9,7 @@ echo $paginator->counter(array(
 <table cellpadding="0" cellspacing="0">
 <tr>
 	<th><?php echo $paginator->sort('id');?></th>
+	<th><?php echo $paginator->sort('ordinal');?></th>
 	<th><?php echo $paginator->sort('event_name');?></th>
 	<th><?php echo $paginator->sort('max_people');?></th>
 	<th><?php echo $paginator->sort('location');?></th>
@@ -30,6 +31,9 @@ foreach ($events as $event):
 	<tr<?php echo $class;?>>
 		<td>
 			<?php echo $event['Event']['id']; ?>
+		</td>
+		<td>
+			<?php echo $event['Event']['ordinal']; ?>
 		</td>
 		<td>
 			<?php echo $event['Event']['event_name']; ?>

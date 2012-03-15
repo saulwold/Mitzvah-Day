@@ -36,6 +36,9 @@ debug($events);
 
 	function index() {
 		$this->Event->recursive = 0;
+		$this->paginate = array(
+				'order' => array("Event.ordinal")
+		);
 		$this->set('events', $this->paginate());
 	}
 
@@ -88,7 +91,7 @@ debug($events);
 
 		$people = $this->Event->Person->find('all', array(
 			'fields' => array('Person.first_name', 'Person.last_name', 'Person.id'),
-			'conditions' => array(),
+			'conditions' => array(),		
 			'contain' => array()
 		));
 

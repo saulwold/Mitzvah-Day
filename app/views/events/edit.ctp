@@ -58,18 +58,23 @@
       toggleCheckboxes();
     });
   });
-
 </script>
 
 <div class="events form">
 <?php echo $form->create('Event');?>
   <fieldset>
-
+  
   <?php
      echo $this->element('form/field', array(
        'fieldName'=>'Event Name <span class="note">(id:' .	$this->data['Event']['id']. ')</span>',
        'value'=>$this->data['Event']['event_name'],
        'cakeName'=>"data[Event][event_name]"
+    ));
+
+    echo $this->element('form/field', array(
+       'fieldName'=>"Ordinal",
+       'value'=>$this->data['Event']['ordinal'],
+       'cakeName'=>"data[Event][ordinal]"
     ));
 
     echo $this->element('form/field', array(

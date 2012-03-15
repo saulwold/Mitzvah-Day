@@ -72,6 +72,12 @@
     ));
 
     echo $this->element('form/field', array(
+       'fieldName'=>"Ordinal",
+       'value'=> "0",
+       'cakeName'=>"data[Event][ordinal]"
+    ));
+
+    echo $this->element('form/field', array(
        'fieldName'=>"Description",
        'value'=>"",
        'cakeName'=>"data[Event][description]",
