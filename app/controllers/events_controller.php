@@ -59,9 +59,14 @@ debug($events);
 				$this->Session->setFlash(__('The Event could not be saved. Please, try again.', true));
 			}
 		}
-		$groups = $this->Event->Group->find('list');
-		$people = $this->Event->Person->find('list');
-		$this->set(compact('groups', 'people'));
+		
+		$people = $this->Event->Person->find('all', array(
+			'fields' => array('Person.first_name', 'Person.last_name', 'Person.id'),
+			'conditions' => array(),
+			'contain' => array()
+		));
+
+		$this->set(compact('people'));
 	}
 
 	function edit($id = null) {
@@ -87,7 +92,7 @@ debug($events);
 			'contain' => array()
 		));
 
-		$this->set(compact('groups','people'));
+		$this->set(compact('people'));
 	}
 
 	function deletePerson($id = null, $event_id = null) {
