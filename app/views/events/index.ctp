@@ -72,9 +72,5 @@ foreach ($events as $event):
 <div class="actions">
 	<ul>
 		<li><?php echo $html->link(__('New Event', true), array('action' => 'add')); ?></li>
-		<li><?php echo $html->link(__('List Groups', true), array('controller' => 'groups', 'action' => 'index')); ?> </li>
-		<li><?php echo $html->link(__('New Group', true), array('controller' => 'groups', 'action' => 'add')); ?> </li>
-		<li><?php echo $html->link(__('List People', true), array('controller' => 'people', 'action' => 'index')); ?> </li>
-		<li><?php echo $html->link(__('New Person', true), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
