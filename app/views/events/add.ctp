@@ -57,6 +57,11 @@
     $('input.mm_check, input.max_people').change(function () {
       toggleCheckboxes();
     });
+
+    $('span.none').click( function() {
+      $('input.mm_check').prop('checked', false);
+      $('span.people_count').text("0");
+    });
   });
 </script>
 
@@ -123,6 +128,9 @@
 
     </div>
     <div class="mm_checkboxes data_block" style="display: none">
+    	<div>
+    		<span class="none">unselect-all</span>
+    	</div>
       <?php foreach ($people as $person) : ?>
 
 	      <div class="check">
