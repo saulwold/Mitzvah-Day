@@ -110,6 +110,12 @@
     ));
 
     echo $this->element('form/field', array(
+       'fieldName'=>"Sponsoring WebSite",
+       'value'=>$this->data['Event']['agency_link'],
+       'cakeName'=>"data[Event][agency_link]"
+    ));
+
+    echo $this->element('form/field', array(
        'fieldName'=>"Time",
        'value'=>$this->data['Event']['time'],
        'cakeName'=>"data[Event][time]"
