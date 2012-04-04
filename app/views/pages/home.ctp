@@ -14,7 +14,6 @@
 </div>
 
 <div class="content_main">
-    <h1 class="big_font"> Comming Soon</h1>
     <h1>4<sup>th</sup> Annual Mitzvah Day 2012</h1>
     <h2>Sunday, May 20th, 2012</h2>
     <br>
