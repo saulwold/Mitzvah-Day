@@ -67,11 +67,11 @@ class Event extends AppModel {
 	    return $this->find('first', array('fields' => $fields, 'conditons' => $conditions, 'contain' => $contain));
 	}
 	function getEvents() {
-		return $this->query("SELECT * from events WHERE events.enrolled < events.max_people AND NOT events.max_people = -1");
+		return $this->query("SELECT * from events WHERE events.enrolled < events.max_people AND NOT events.max_people = -1 ORDER BY events.ordinal ASC");
 	}
 
 	function getFullEvents() {
-		return $this->query("SELECT * from events WHERE events.enrolled = events.max_people OR events.enrolled > events.max_people AND NOT events.max_people = 0 AND NOT events.max_people = -1");
+		return $this->query("SELECT * from events WHERE events.enrolled = events.max_people OR events.enrolled > events.max_people AND NOT events.max_people = 0 AND NOT events.max_people = -1 ORDER BY events.ordinal ASC");
 	}
 
 	function updateEnrolled($id = null, $count = 0) {
